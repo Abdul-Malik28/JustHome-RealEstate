@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', 'sans-serif']
       },
+      backgroundImage: () => ({
+        city: "url(../Images/nav-background.jpg)",
+      }),
     },
   },
   plugins: [],
