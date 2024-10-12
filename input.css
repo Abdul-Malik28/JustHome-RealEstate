@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    h1{
+        @apply text-3xl md:text-4xl font-medium;
+    }
+
+    h2{
+        @apply text-softGreen text-4xl lg:text-5xl font-medium;
+    }
+}
+
 @layer components {
 
     .btn {
