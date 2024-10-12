@@ -21,14 +21,17 @@
 
 <body>
 
-    <div class="bg-city bg-cover bg-center bg-no-repeat h-screen relative flex justify-between flex-col pt-36 sm:pt-44">
+    <div
+        class="bg-city bg-cover bg-fixed bg-center bg-no-repeat h-screen relative flex justify-between flex-col pt-36 sm:pt-44">
 
         <div class="fixed left-0 top-0 right-0 z-20">
 
+            <!-- navbar -->
             <nav class="container mx-auto flex items-center justify-center p-1">
 
                 <!-- flex container for nav items -->
-                <div class="flex items-center w-screen justify-between space-x-20 rounded-full my-6 px-8 py-4 bg-white">
+                <div
+                    class="flex items-center w-screen justify-between space-x-20 rounded-full my-6 px-8 py-4 bg-white shadow-lg">
 
                     <!-- logo -->
                     <div class="cursor-pointer hover:scale-110 duration-300">
@@ -39,11 +42,11 @@
                     <div class="hidden items-center text-sm font-medium space-x-8 xl:flex">
 
                         <a href="#" class="border-b border-b-black">Home</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
+                        <a href="#" class="btn-hover">Listings</a>
+                        <a href="#" class="btn-hover">Members</a>
+                        <a href="#" class="btn-hover">Blog</a>
+                        <a href="#" class="btn-hover">Pages</a>
+                        <a href="#" class="btn-hover">Contact</a>
 
                     </div>
 
@@ -60,14 +63,14 @@
 
                         <div class="flex items-center space-x-3">
 
-                            <button
-                                class="rounded-full w-10 h-10 hover:bg-softYellow hover:border-softYellow duration-200 transition-all border border-black">
+                            <button class="icon-hover">
 
                                 <i class="fa-regular fa-user"></i>
 
                             </button>
 
-                            <button class="btn hover:bg-softYellow hover:border-softYellow">Add Property</button>
+                            <button class="btn-softYellow-hover">Add
+                                Property</button>
 
                         </div>
 
@@ -97,11 +100,11 @@
                     <div class="flex flex-col items-center text-lg font-medium space-y-4">
 
                         <a href="#" class="border-b border-b-black">Home</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
-                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
+                        <a href="#" class="btn-hover">Listings</a>
+                        <a href="#" class="btn-hover">Members</a>
+                        <a href="#" class="btn-hover">Blog</a>
+                        <a href="#" class="btn-hover">Pages</a>
+                        <a href="#" class="btn-hover">Contact</a>
 
                     </div>
 
@@ -125,7 +128,8 @@
 
                             </button>
 
-                            <button class="btn hover:bg-black hover:text-white hover:border-black">Add Property</button>
+                            <button class="btn">Add
+                                Property</button>
 
                         </div>
 
@@ -147,8 +151,7 @@
                 <div class="container mx-auto max-w-lg flex flex-col text-center space-y-5">
 
                     <div>
-                        <button
-                            class="hover:-translate-y-2 rounded-full text-sm px-6 py-2 border border-softGreen hover:bg-softGreen hover:text-white hover:border-softGreen text-softGreen duration-200 ease-in uppercase">
+                        <button class="btn-softGreen-hover">
                             let us guide your home
                         </button>
                     </div>
@@ -171,8 +174,7 @@
                         <input type="text" placeholder="Enter Name, Keywords..."
                             class="w-full text-xs focus:outline-none placeholder:text-black" />
 
-                        <div
-                            class="absolute right-2 top-1 rounded-full cursor-pointer flex items-center justify-center w-10 h-10 hover:bg-softYellow hover:border-softYellow duration-200 transition-all border border-black">
+                        <div class="absolute right-2 top-1 flex items-center justify-center icon-hover">
 
                             <i class="fa-solid fa-magnifying-glass"></i>
 
@@ -192,8 +194,7 @@
                     <div
                         class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
 
-                        <a href="#"
-                            class="flex pr-4 pl-1 py-1 backdrop-blur-sm bg-white/30 text-white rounded-full items-center space-x-2 hover:-translate-y-0 hover:translate-x-2 md:hover:translate-x-0 md:hover:-translate-y-2">
+                        <a href="#" class="btn-blur">
 
                             <div
                                 class="left-1 top-1 rounded-full cursor-pointer flex items-center justify-center w-10 h-10 bg-white text-black">
@@ -206,8 +207,7 @@
 
                         </a>
 
-                        <a href="#"
-                            class="flex pr-4 pl-1 py-1 backdrop-blur-sm bg-white/30 text-white rounded-full items-center space-x-2 hover:-translate-y-0 hover:translate-x-2 md:hover:translate-x-0 md:hover:-translate-y-2">
+                        <a href="#" class="btn-blur -ml-3">
 
                             <div
                                 class="left-1 top-1 rounded-full cursor-pointer flex items-center justify-center w-10 h-10 bg-white text-black">
@@ -220,8 +220,7 @@
 
                         </a>
 
-                        <a href="#"
-                            class="flex pr-4 pl-1 py-1 backdrop-blur-sm bg-white/30 text-white rounded-full items-center space-x-2 hover:-translate-y-0 hover:translate-x-2 md:hover:translate-x-0 md:hover:-translate-y-2">
+                        <a href="#" class="btn-blur">
 
                             <div
                                 class="left-1 top-1 rounded-full cursor-pointer flex items-center justify-center w-10 h-10 bg-white text-black">
@@ -248,7 +247,7 @@
     <section id="work">
 
         <!-- flex container for items -->
-        <div class="max-w-6xl mx-auto text-center px-10 my-24 space-y-4">
+        <div class="max-w-6xl mx-auto text-center px-10 my-32 space-y-11">
 
             <!-- heading container -->
             <div class="space-y-3 max-w-3xl mx-auto text-center ">
@@ -260,7 +259,8 @@
             </div>
 
             <!-- box container -->
-            <div class="flex flex-col space-y-1 items-center max-w-6xl md:flex-row md:space-y-0 md:space-x-4 md:justify-center mx-auto">
+            <div
+                class="flex flex-col space-y-3 items-center max-w-6xl md:flex-row md:space-y-0 md:space-x-4 md:justify-center mx-auto">
 
                 <!-- box 1 -->
                 <div class="flex flex-col p-3 max-w-xs space-y-5 items-center">
@@ -275,7 +275,7 @@
                 </div>
 
                 <!-- box 2 -->
-                <div class="flex flex-col p-3 max-w-xs space-y-6 items-center">
+                <div class="flex flex-col p-3 max-w-xs space-y-5 md:space-y-6 items-center">
 
                     <img src="Images/icon-buy-items.svg" alt="" />
 
@@ -287,9 +287,9 @@
                 </div>
 
                 <!-- box 3 -->
-                <div class="flex flex-col p-3 max-w-xs space-y-6 items-center">
+                <div class="flex flex-col p-3 max-w-xs space-y-5 md:space-y-6 items-center">
 
-                    <img src="Images/icon-wide-range.svg" alt="" />
+                    <img src="Images/icon-thousand.svg" alt="" />
 
                     <h3 class="text-lg font-medium">Trusted by Thousands</h3>
 
@@ -303,6 +303,459 @@
         </div>
 
     </section>
+
+    <!-- features section -->
+    <section id="features">
+
+        <!-- flex container for items -->
+        <div class="max-w-6xl mx-auto text-center px-10 my-32 space-y-11">
+
+            <!-- heading container -->
+            <div class="space-y-3 max-w-3xl mx-auto text-center ">
+
+                <h1 class="text-3xl md:text-4xl font-medium">Featured Properties</h1>
+
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+
+            <!-- button contaienr -->
+            <div
+                class="flex flex-col mx-auto max-w-lg justify-center space-y-4 sm:flex-row sm:space-y-0 sm:items-center sm:space-x-4">
+
+                <button class="btn-softButter active">All Properties</button>
+
+                <button class="btn-softButter">For Sale</button>
+
+                <button class="btn-softButter">For Rent</button>
+
+
+            </div>
+
+            <!-- box container -->
+            <div class="flex flex-col space-y-4 justify-center">
+
+                <!-- 1st sub container -->
+                <div class="box-sub-container">
+
+                    <!-- box 1 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box1 bg-center bg-no-repeat bg-cover">
+
+                        <div class="flex items-center space-x-3 absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                            <button class="btn-softYellow">Featured</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">Luxury Family Home</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>1800-1818 79th St</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$395,000</p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>1</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>400</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 2 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box2 bg-center bg-no-repeat bg-cover">
+
+                        <div class="absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">Skyper Pool Apartment</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>1020 Bloomingdale Ave</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$280,000</p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>2</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>450</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 3 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box3 bg-center bg-no-repeat bg-cover">
+
+                        <div class="absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">North Dillard Street</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>4330 Bell Shoals Rd</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$250<span class="text-xs font-light">/month</span>
+                                </p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>2</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>400</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 2st sub container -->
+                <div class="box-sub-container">
+
+                    <!-- box 4 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box4 bg-center bg-no-repeat bg-cover">
+
+                        <div class="flex items-center space-x-3 absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                            <button class="btn-softYellow">Featured</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">Eaton Garth Penthouse</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>7722 18th Ave, Brooklyn</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$850<span class="text-xs font-light">/month</span>
+                                </p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>1</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>460</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 5 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box5 bg-center bg-no-repeat bg-cover">
+
+                        <div class="flex items-center space-x-3 absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                            <button class="btn-softYellow">Featured</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">New Apartment Nice Wiew</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>42 Avenue O, Brooklyn</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$180,000</p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>1</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>450</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 6 -->
+                    <div
+                        class="relative rounded-2xl h-72 w-72 md:h-96 md:w-1/3 bg-box6 bg-center bg-no-repeat bg-cover">
+
+                        <div class="flex items-center space-x-3 absolute top-4 left-4">
+
+                            <button class="btn-darkGreen">For Sale</button>
+
+                            <button class="btn-softYellow">Featured</button>
+
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start p-4 space-y-2 rounded-lg bg-white text-black absolute bottom-4 left-4 right-4">
+
+                            <p class="text-sm font-medium">Diamond Manor Apartment</p>
+
+                            <div class="text-xs font-light flex items-center">
+
+                                <p class="mr-2">
+                                    <img src="Images/icon-location.svg" alt="" class="h-4">
+                                </p>
+
+                                <p>7802 20th Ave, Brooklyn</p>
+
+                            </div>
+
+                            <div
+                                class="font-medium space-y-2 md:space-y-0 flex flex-col items-start md:flex-row md:items-center md:justify-between md:w-full">
+
+                                <p class="text-lg text-red-500">$259,000</p>
+
+                                <div class="flex items-center font-light">
+
+                                    <div class="flex text-xs font-light items-center space-x-2 pr-2 border-r">
+
+                                        <img src="Images/icon-bed.svg" alt="" class="h-3">
+
+                                        <p>4</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-bath.svg" alt="" class="h-4">
+
+                                        <p>2</p>
+
+                                    </div>
+
+                                    <div class="flex text-xs font-light items-center space-x-2 px-2 border-r">
+
+                                        <img src="Images/icon-double-frame.svg" alt="" class="h-4">
+
+                                        <p>500</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- last btn -->
+            <div class="mx-auto  text-center">
+
+                <button class="btn-softYellow-hover space-x-1">
+                    <span>See all Listing</span>
+                    <i class="fa-solid fa-arrow-right inline-block align-middle"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
 
 
 

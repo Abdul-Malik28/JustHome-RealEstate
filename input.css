@@ -2,10 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn{
-    @apply cursor-pointer rounded-full px-6 py-2 border border-black duration-200 transition-all ease-in;
+.btn {
+    @apply cursor-pointer rounded-full px-6 py-2 duration-200 transition-all ease-in border-black border hover:bg-black hover:text-white hover:border-black;
 }
 
-*{
+.btn-softYellow-hover {
+    @apply cursor-pointer rounded-full px-6 py-2 duration-200 transition-all ease-in border border-black hover:bg-softYellow hover:border-softYellow;
+}
+
+.icon-hover {
+    @apply rounded-full w-10 h-10 hover:bg-softYellow hover:border-softYellow duration-200 transition-all border border-black cursor-pointer;
+}
+
+.btn-hover {
+    @apply hover:border-b border-b-black duration-200 transition-all;
+}
+
+.btn-softGreen-hover {
+    @apply hover:-translate-y-2 rounded-full text-sm px-6 py-2 border border-softGreen hover:bg-softGreen hover:text-white hover:border-softGreen text-softGreen duration-200 ease-in uppercase;
+}
+
+.btn-blur {
+    @apply flex pr-4 pl-1 py-1 backdrop-blur-sm bg-white/30 text-white rounded-full items-center space-x-2 hover:-translate-y-0 hover:translate-x-2 md:hover:translate-x-0 md:hover:-translate-y-2;
+}
+
+.btn-softButter {
+    @apply cursor-pointer rounded-full px-6 py-2 duration-200 transition-all ease-in
+}
+
+.btn-softButter.active {
+    @apply bg-softButter border border-black;
+}
+
+.btn-darkGreen {
+    @apply hover:-translate-y-1 rounded-full text-xs px-3 py-2 border-none bg-softGreen text-white ease-in uppercase;
+}
+
+.btn-softYellow {
+    @apply hover:-translate-y-1 cursor-pointer rounded-full text-xs px-3 py-2 ease-in border-none bg-softYellow uppercase;
+}
+
+.box-sub-container{
+    @apply flex flex-col justify-center items-start md:items-center md:justify-start md:flex-row space-y-4 md:space-y-0 md:space-x-4;
+}
+
+* {
     @apply font-sans;
 }
