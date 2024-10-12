@@ -54,6 +54,10 @@
         @apply hover:-translate-y-1 cursor-pointer rounded-full text-xs px-3 py-2 ease-in border-none bg-softYellow uppercase;
     }
 
+    .btn-arrow {
+        @apply cursor-pointer rounded-full px-5 py-1 duration-200 transition-all ease-in border-black border hover:bg-black hover:text-white hover:border-black;
+    }
+
 }
 
 .box-sub-container {
