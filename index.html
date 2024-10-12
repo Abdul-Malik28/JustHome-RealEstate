@@ -21,117 +21,121 @@
 
 <body>
 
-    <div class="bg-city bg-cover bg-center bg-no-repeat h-screen relative flex justify-between flex-col">
+    <div class="bg-city bg-cover bg-center bg-no-repeat h-screen relative flex justify-between flex-col pt-36 sm:pt-44">
 
-        <nav class="container mx-auto flex items-center justify-center p-1">
+        <div class="fixed left-0 top-0 right-0 z-20">
 
-            <!-- flex container for nav items -->
-            <div class="flex items-center w-screen justify-between space-x-20 rounded-full my-6 px-8 py-4 bg-white">
+            <nav class="container mx-auto flex items-center justify-center p-1">
 
-                <!-- logo -->
-                <div class="cursor-pointer hover:scale-110 duration-300">
-                    <img src="images/logo.svg" class="h-8" alt="">
-                </div>
+                <!-- flex container for nav items -->
+                <div class="flex items-center w-screen justify-between space-x-20 rounded-full my-6 px-8 py-4 bg-white">
 
-                <!-- middle -->
-                <div class="hidden items-center text-sm font-medium space-x-8 xl:flex">
+                    <!-- logo -->
+                    <div class="cursor-pointer hover:scale-110 duration-300">
+                        <img src="images/logo.svg" class="h-8" alt="">
+                    </div>
 
-                    <a href="#" class="border-b border-b-black">Home</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
+                    <!-- middle -->
+                    <div class="hidden items-center text-sm font-medium space-x-8 xl:flex">
 
-                </div>
-
-                <!-- right -->
-                <div class="hidden items-center text-sm space-x-4 xl:flex">
-
-                    <div class="flex items-center space-x-3">
-
-                        <i class="bi bi-telephone text-lg"></i>
-
-                        <p class="font-medium">+94 72 257 8559</p>
+                        <a href="#" class="border-b border-b-black">Home</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
 
                     </div>
 
-                    <div class="flex items-center space-x-3">
+                    <!-- right -->
+                    <div class="hidden items-center text-sm space-x-4 xl:flex">
 
-                        <button
-                            class="rounded-full w-10 h-10 hover:bg-softYellow hover:border-softYellow duration-200 transition-all border border-black">
+                        <div class="flex items-center space-x-3">
 
-                            <i class="fa-regular fa-user"></i>
+                            <i class="bi bi-telephone text-lg"></i>
 
-                        </button>
+                            <p class="font-medium">+94 72 257 8559</p>
 
-                        <button class="btn hover:bg-softYellow hover:border-softYellow">Add Property</button>
+                        </div>
 
-                    </div>
+                        <div class="flex items-center space-x-3">
 
-                </div>
+                            <button
+                                class="rounded-full w-10 h-10 hover:bg-softYellow hover:border-softYellow duration-200 transition-all border border-black">
 
+                                <i class="fa-regular fa-user"></i>
 
-                <!-- hamburger btn -->
-                <div class="flex xl:hidden">
+                            </button>
 
-                    <p id="menu-btn" class="text-xl cursor-pointer">
-                        <i class="fa-solid fa-bars"></i>
-                    </p>
+                            <button class="btn hover:bg-softYellow hover:border-softYellow">Add Property</button>
 
-                    <p id="menu-btn2" class="hidden z-50 text-xl cursor-pointer">
-                        <i class="fa-solid fa-x"></i>
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- humburger item -->
-            <div id="menu"
-                class="hidden z-40 flex-col items-center justify-center space-y-4 p-6 backdrop-blur-sm bg-white/30 absolute right-0 left-0 top-0 bottom-0 xl:hidden">
-
-                <!-- middle -->
-                <div class="flex flex-col items-center text-lg font-medium space-y-4">
-
-                    <a href="#" class="border-b border-b-black">Home</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
-                    <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
-
-                </div>
-
-                <!-- right -->
-                <div class="flex flex-col items-center text-lg font-medium space-y-4">
-
-                    <div class="flex items-center space-x-3">
-
-                        <i class="bi bi-telephone text-lg"></i>
-
-                        <p class="font-medium">+94 72 257 8559</p>
+                        </div>
 
                     </div>
 
-                    <div class="flex items-center space-x-3">
 
-                        <button
-                            class="rounded-full w-10 h-10 hover:text-white hover:bg-black hover:border-black duration-200 transition-all border border-black">
+                    <!-- hamburger btn -->
+                    <div class="flex xl:hidden">
 
-                            <i class="fa-regular fa-user"></i>
+                        <p id="menu-btn" class="text-xl cursor-pointer">
+                            <i class="fa-solid fa-bars"></i>
+                        </p>
 
-                        </button>
-
-                        <button class="btn hover:bg-black hover:text-white hover:border-black">Add Property</button>
+                        <p id="menu-btn2" class="hidden z-50 text-xl cursor-pointer">
+                            <i class="fa-solid fa-x"></i>
+                        </p>
 
                     </div>
 
                 </div>
 
-            </div>
+                <!-- humburger item -->
+                <div id="menu"
+                    class="hidden z-40 flex-col items-center justify-center space-y-4 p-6 backdrop-blur-sm bg-white/30 fixed right-0 left-0 top-0 bottom-0 xl:hidden">
 
-        </nav>
+                    <!-- middle -->
+                    <div class="flex flex-col items-center text-lg font-medium space-y-4">
+
+                        <a href="#" class="border-b border-b-black">Home</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Listings</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Members</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Blog</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Pages</a>
+                        <a href="#" class="hover:border-b border-b-black duration-200 transition-all">Contact</a>
+
+                    </div>
+
+                    <!-- right -->
+                    <div class="flex flex-col items-center text-lg font-medium space-y-4">
+
+                        <div class="flex items-center space-x-3">
+
+                            <i class="bi bi-telephone text-lg"></i>
+
+                            <p class="font-medium">+94 72 257 8559</p>
+
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+
+                            <button
+                                class="rounded-full w-10 h-10 hover:text-white hover:bg-black hover:border-black duration-200 transition-all border border-black">
+
+                                <i class="fa-regular fa-user"></i>
+
+                            </button>
+
+                            <button class="btn hover:bg-black hover:text-white hover:border-black">Add Property</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
 
         <!-- hero -->
         <section id="hero" class="mb-10">
@@ -185,7 +189,8 @@
                         What are you looking for?
                     </p>
 
-                    <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                    <div
+                        class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
 
                         <a href="#"
                             class="flex pr-4 pl-1 py-1 backdrop-blur-sm bg-white/30 text-white rounded-full items-center space-x-2 hover:-translate-y-0 hover:translate-x-2 md:hover:translate-x-0 md:hover:-translate-y-2">
@@ -238,6 +243,66 @@
         </section>
 
     </div>
+
+    <!-- why should -->
+    <section id="work">
+
+        <!-- flex container for items -->
+        <div class="max-w-6xl mx-auto text-center px-10 my-24 space-y-4">
+
+            <!-- heading container -->
+            <div class="space-y-3 max-w-3xl mx-auto text-center ">
+
+                <h1 class="text-3xl md:text-4xl font-medium">Why You Should Work With Us</h1>
+
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+
+            <!-- box container -->
+            <div class="flex flex-col space-y-1 items-center max-w-6xl md:flex-row md:space-y-0 md:space-x-4 md:justify-center mx-auto">
+
+                <!-- box 1 -->
+                <div class="flex flex-col p-3 max-w-xs space-y-5 items-center">
+
+                    <img src="Images/icon-wide-range.svg" alt="" />
+
+                    <h3 class="text-lg font-medium">Wide Range of Properties</h3>
+
+                    <p class="text-sm text-center">We offer expert legal help for all related property items in Dubai.
+                    </p>
+
+                </div>
+
+                <!-- box 2 -->
+                <div class="flex flex-col p-3 max-w-xs space-y-6 items-center">
+
+                    <img src="Images/icon-buy-items.svg" alt="" />
+
+                    <h3 class="text-lg font-medium">Buy or Rent Homes</h3>
+
+                    <p class="text-sm text-center">We sell your home at the best market price and very quickly as well.
+                    </p>
+
+                </div>
+
+                <!-- box 3 -->
+                <div class="flex flex-col p-3 max-w-xs space-y-6 items-center">
+
+                    <img src="Images/icon-wide-range.svg" alt="" />
+
+                    <h3 class="text-lg font-medium">Trusted by Thousands</h3>
+
+                    <p class="text-sm text-center">We offer you free consultancy to get a loan for your new home.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 
