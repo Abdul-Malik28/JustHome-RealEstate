@@ -76,6 +76,28 @@
     @apply flex flex-col space-y-1 items-start absolute top-8 left-8 text-white font-medium group-hover:text-black;
 }
 
+.ficon:hover{
+    filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg) brightness(101%) contrast(96%);
+}
+
+.hvr::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border-radius: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    width: 0;
+    transition: all .4s ease;
+}
+
+.hvr:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
 * {
     @apply font-sans;
 }
