@@ -68,6 +68,10 @@
     @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b to-transparent from-slate-900 opacity-65 group-hover:from-gray-400 group-hover:to-gray-200 group-hover:opacity-70;
 }
 
+.item-gradient-2 {
+    @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-t to-transparent from-slate-900 opacity-65 group-hover:from-gray-400 group-hover:to-gray-200 group-hover:opacity-70;
+}
+
 .item-text{
     @apply flex flex-col space-y-1 items-start absolute top-8 left-8 text-white font-medium group-hover:text-black;
 }
